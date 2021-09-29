@@ -20,7 +20,7 @@
         <quarkus-plugin.version>1.12.2.Final</quarkus-plugin.version>
 
         <avro.version>1.10.0</avro.version>
-        <apicurio.version>2.0.0-SNAPSHOT</apicurio.version>
+        <apicurio.version>2.0.1.Final</apicurio.version>
     </properties>
 
     <dependencyManagement>
@@ -151,7 +151,7 @@
                                     <goal>register</goal>
                                 </goals>
                                 <configuration>
-                                    <registryUrl>http://localhost:8181/apis/registry/v2</registryUrl>
+                                    <registryUrl>http://localhost:8081/apis/registry/v2</registryUrl>
                                     <artifactType>AVRO</artifactType>
                                     <artifacts>
                                         <events-value>${project.basedir}/src/main/resources/avro/schema/event.avsc</events-value>
@@ -178,7 +178,7 @@
                                     <goal>test-update</goal>
                                 </goals>
                                 <configuration>
-                                    <registryUrl>http://localhost:8181/apis/registry/v2</registryUrl>
+                                    <registryUrl>http://localhost:8081/apis/registry/v2</registryUrl>
                                     <artifactType>AVRO</artifactType>
                                     <artifacts>
                                         <events-value>${project.basedir}/src/main/resources/avro/schema/event.avsc</events-value>
@@ -205,7 +205,7 @@
                                     <goal>download</goal>
                                 </goals>
                                 <configuration>
-                                    <registryUrl>http://localhost:8181/apis/registry/v2</registryUrl>
+                                    <registryUrl>http://localhost:8081/apis/registry/v2</registryUrl>
                                     <ids>
                                         <param1>events-value</param1>
                                     </ids>

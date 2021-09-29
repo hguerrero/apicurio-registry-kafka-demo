@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 8181
 spring:
   kafka:
     producer:
@@ -9,7 +9,7 @@ spring:
       properties:
         apicurio:
           registry:
-            url: http://localhost:8181/apis/registry/v2
+            url: http://localhost:8081/apis/registry/v2
             artifact-resolver-strategy: io.apicurio.registry.serde.avro.strategy.RecordIdStrategy
             artifact:
               version: "1"
@@ -23,5 +23,5 @@ spring:
         spring.json.trusted.packages: "io.apicurio.example"
         apicurio:
           registry:
-            url: http://localhost:8181/apis/registry/v2
+            url: http://localhost:8081/apis/registry/v2
             use-specific-avro-reader: true

@@ -6,7 +6,7 @@ quarkus:
 
 apicurio:
   registry:
-    url: http://localhost:8181/apis/registry/v2
+    url: http://localhost:8081/apis/registry/v2
 
 kafka:
   bootstrap:

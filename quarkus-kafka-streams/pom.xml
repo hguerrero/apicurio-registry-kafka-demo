@@ -20,7 +20,7 @@
         <quarkus-plugin.version>1.12.2.Final</quarkus-plugin.version>
 
         <avro.version>1.10.0</avro.version>
-        <apicurio.version>2.0.0-SNAPSHOT</apicurio.version>
+        <apicurio.version>2.0.1.Final</apicurio.version>
     </properties>
 
     <dependencyManagement>
